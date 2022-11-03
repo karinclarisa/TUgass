@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>calculator~~~~</title>
+    <style>
+        body {
+            color:rgb(50, 52, 167);
+            background-color: rgb(231, 231, 243);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 3px solid rgb(252, 252, 255);
+            border-radius: 3px;
+            padding: 20px;
+        }
+        img {
+            width:250px;
+            height:200px;
+        }
+        button {
+            color :rgb(50, 52, 167);
+        }
+    </style>
+</head>
+<body>  
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAABAlBMVEXTSBj///9NJyDWSRhIJiDYSRhJJiBLJyBFJSBEJSDPRxhMJR5IHxdCJSDaShdQKCC8QhrIRRlFGQ88AADDRBlHHRRrLh9BEQBXKR+LNh17Mh5dKx+kPBtlLR+cOhxvLx60QBpZOjWtPhvt6unSQACBNB3h3Ns/CgCciod1XFiMNh12MR6hOxyypaJtUk349vaDbGjOxcPCt7WllZKWOBw1AADX0c/noo6OenZhQTtkRkDn4uFWMSs+BQA7IyG5q6n77ur649vak37z0cjZYDfPLwDwxrrWVCnpsKTZZkXtn4u4a1aQgX/ijHXffmBlNiutd2iDKQDstqfTpZfbcFSojojd3zxKAAALzklEQVR4nO2cZ3fbOBaGRQAEQYISi0SR6jLVK9WsqCW2J30mzu7O7P7/v7IAi4oz5+ye2TPjpYTnQ+LIyYnw8t6L2+RMRiAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCG4b+Npv4PWxTO3mVSgbjab82m/iNYDHR69VCH5XvTlLgBnNNLUkDvg1jCuF2xIBZsbFbDaLGn6kAoRlpN6WIUCzgTAmCCOlET19aGbJ8EY0gDKnCRBWG6tVTcXIq8vs7HJVJaub0ABafmc0qjc9jBtN5gCaX0EKGpmaZlYwaN6CBrlqLct9ACsA1M1MToay1cliBEYjA5OG9trv788HWh0VO8724ACGohiNaiEjy36NYAYpWrdgBkVEe7P5fr25v8+/dW0dq165KcvWqvIuW6nfhAQjot8tpIjW+qE/UAhGaq2ZCcPkLSggjxF117EEj0+PUvCTufKYG4DyzZQKmkFBLMH7Dx85bSjDahEBYvi3USrApmJ/iyT4lDsdWdZKGGBQf8V39tch15EbBYPHz+dPnbkIuySypVvwB+hjux+ZQfvyda4BQNcfFGQ5ZwJ9EHAN3lxokNEI1wCo5evOkGCh3qh4wNmEdvDlUgO5ExoCIKVXend/BVBbeSpCGNjL3/EFVjAaSmQJw1d6g38+UGsQBRm1YqJB8PWFIVRVEImwutYrUuuoitoxNV+J7wXpfbstw7MIKA8Jjtyhep0iyHWCPZMViFXcSxLlx+evH762T9aQa9YQUigFZJV7xbf6p5GrYMwfL8uR3AcpgeXKT2/aR1uAVrPU2O5soF5jcxkWsngUfsHyxKV0wftMfGBWMeXaP0vS0lUM8/rSBOgTFIa639FA+pQJTcGqlzqrXx7ZCxsdFaHGYS9fxIw0wzWoh4/bAkm9cOLxOddmBQO7OQmim0W3u6XY4xQbndLYN63cNZTUXINhqIFm6LOXGjAVvowItQ+AAmrbhx37HSgMjJksilcpDn0rk3odtHckjAeZnKdPW/zY84fumQgzXXcn64nO70aqOzpIoD3b0THKGuW6mUu3CnKn4ocnkBv4wA8/cV19fZRg4uo7/uqAH55uv00TEfTtfLIZ3Dk2RchoVFNeUWlRu0AuIZufnZ3S3iQStAyaD63iocfPPZDmdqyBHSYT3flyl+eNx1pdS/GtCQvFcH4EfdWdsEyZaRAXkIy+HRfUwYFFAuD2I4MArL5qJTrtlwPb4aOYVDZdZe7HclnFfJwGefHMj53X3SQ4Blv9EAeHJTcA6jLn4HHB1rfT/kOiVDCf3dsKqTXTl0VqHYOFAnlF8DhMA4qKy0/0bTdInvEkMQNJWoPQECaSTak9mPd7uu3mt5NurMO+7zhYHaXOFKws6fDkSI2zpA5y52EQOD7fgZ7fJ1/v9NAFpI1tTwJpPzBsdi+4h8E8EYl5SeoaLdDPEnZ42VdJpIFPjk89Yp53TilDP3SGbWvtxH9rPpnpPcdl/tPax9corqVNA1Yq1AoZs8iKpmi8jtkRzzWYOfr8JAi/GUCvu98608Q29ovBYSK1pneDRSAtHIX4afMFbYSwamQxqkRPTy4RfjMcWehhkIxp2XFAmNl3e+mcbt5xes4M0DjrThPQrPEtC1SLZ+rQNOjhZAitA0W/PD+/eQqS4BAFhL7NraPV7x+VeJgedKpTksZmG7TqnWJpfMrxOsSZJQFxvXNIGbYZHz6dAoI+lRY93nBa37uHk6OwYgqQ8mue5Y8ANSsTLl6db19qBnamD11mC62Nzurk2Efa33nhPAmD4oGZPi+y91NXt2ex1QRLHeDO6xzkf0Ar135cK5GbHtDdPHOIh3uqnhYO2t95eOBrCRRIwX14MbQ2LEXYhhnzfuAqavpa7/JKVUsvIxjUhszaXfe+K3V3f6ufWQjvIoVZEqVBYFAjLKrmO5ullHtmBA42xqkLhxlNAT+s2snWiNC30/mSP9zWT+cddvj5SdqHJQP47dlTKA1ThNbmLbB3A5cSI4WrSiwnBNmXK5e+inTneDk+X0wZ2l/isklptz2FFQ7bMCD2KSseME7jRBaaHnipgbwCir09dQ4+X3y3/T2Q7kI7sDRP8QDWwXLRn7GXMCmmLjPiyEPyQgOolVXqboKjBE8fL/4F/HymARqZDaLYrs1yAjDy09NFgueXIGLxTT3zYWg1ELV5+yBWYf33F1NH7THSQOEaNDIseiIMjNrQTFHvBJqdavI1nyAeADmND6FVJPphwYLc/S4UYZ3XL+86+CGxA017h1gqIJv1ql9IV19Z7mRP85Eypss7pZFowCRAvFnSYnlPmCwHMwcoF9MUniFEGuTixWWYvvmCXEJoFB0aFjyW7g10Lw4IUCsih3dO13nXCMP9wgWADM+NnN0LoQaKl6uqJIXJAEceqwDVoxrZV1mmt7TjPzKzIDormltBsIy6hAE/LeqcHRR+fozuRlzMlRBI5UXA4wFfJ1mFHcQSctdSKx93POQh4onfwtjx43MRwt7hhQYfv4R1JH8110BeWj/MUagozMD5pxFyFbrd8w5Jlj9P6GcpXUsPPf1+L60P+bXUpdzxz/shPFWOcmVSL1RQLZ2uwLLjBgaOjiq+rCk6r5AXDh6xY1o17C6ltU57G6aLnV+wX7gZ1Kz4H8L2x5/C8oD3D7JNH19YSKpgeRH9NrWV7KqpRB3Bga74UB6q9kxav6U9VhAv8vo0mPP6MPrwUtg+0L4/RZ0SLo1X6CA1hcVBBI+Ey9bMVkARRC2zRQ83YEahRre1091vzOOnujOXwnGax5ct2l+fn3/99BRnjryHgosWwJ71n/+3/1dUPj+auBSDXngDBlP9nTkmzrdgYIcN5KWrD9bT0BP4xRh2DU6tNYOHxFJVRenrFBzJFbHdjdpBkQY8InRKiN5NHQoW62BvU7o9hLO0sK7++HSuwYL3lVF9lOqP9Mh1Em6abGwQT06CLfVGWYLDhvHbfJ73SKJdRMI7xO3Hcw1CFyFV5g7plYAXzHTLO18HmkyPJi4qNVeNimdgQhAhBHhFA8TJAfxwrsEDl0ApjnDKF/RGOJyZ9Hv3sQY87cnJOc30q+NxaTUe+wU/0qAsZ9pvTgrsJ+F0QSmi1I2SLmHZUBj69rPjfkHfznLvhhDKcvjRRq2iRBrk4oi4fxhs7+4OoQThd1KaJx8xlOjTOotk22bhoIvSCJaiLXX0j8+/8iI6WB56OqU0UQCgYqo9gZ1wjKI78N6InSGg+PxTi/IqWsoF8dpud+ceTx+ipLZUOGJVFFYaSH33OFfc0mNOzHxhHG9ng/sgujcccIma/o/7ylVVvwv4zeB2kxuvUki+aY2yybJRNF0f2C8kQI30bZr8gMYKJHa+ZT4/udQAwky9hpKds3hJj146AisirmFTF5pAsR8k6dsmzpIAiwe5HLSaQ09VkqO6v73nKeLshScowEx5QIyAK0LPFyscxSt3ysUKQEq8ech3qzLw8z9/DV6YgQLSnR2d0SH64bik/5DXKcaY6k7PGNg91yHZyooPjWCu/bWILiRQr0YCli0iavePQ/PB9nA47KabRStoLSb/Wp1+BpBsNdCFFVxBLIjhEyXF3T0cF872+/1x+eS5fT57sir4GA6VK7KCDI8JBjMFcMeNYT+ZDWb9dTxd+nQ5YJOrSZhElWv7AAs0G7xitu8mS8N1dN1+O1hLj49Pb16Ojy0v/lhfsXBlEvCMsFAaecwYklJI16u8dfjS43NF7gzYGKZupPTfAOVMoZM9xTzlxy0KVkvyfryieteQGf0+7IgdAx0To8qLb2bMcTGrAOKNr9IIEmCmUDJQbAyqnwkbCdGJzXqD/wwMBIbXFwlewB53tWyooTUQozEqcToNT83y7U21trJSNVz/o8gZyy9XjPAHgyUwA8BGpdRM3Sr+H4c7f3VVLnpKlqMatdFwbMKbMIEzeBjQrARNuzkBBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCASCfwNtaxUcgZTKAAAAAABJRU5ErkJggg==">
+    <h3>Welcome to Karin's Calculator~!!!!!</h3>
+    <h4>The Calculator</h4>
+    <br>
+
+    <label for="">Length [ p (panjang) ]</label>
+    <input type="text" id="p">
+    <br><br>
+    <label for="">Width [ l (lebar) ]</label>
+    <input type="text" id="l">
+    <br><br>
+    <p>Hasil Luas</p>
+    <input type="text" id="luas">
+    <br><br>
+
+    <button onclick="dikali()">Multiply (x))</button>
+
+    <script>
+        var p=document.getElementById("p");
+        var l=document.getElementById("l");
+        var luas=document.getElementById("luas")
+        function dikali(){
+            luas.value=Number(p.value)*Number(l.value);
+        }
+    </script>  
+    <br><br><br>
+    <p style="text-align:center; color:rgb(240, 78, 66); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">thank you for using MY services!!!</p>
+    </body>
+    </html>
